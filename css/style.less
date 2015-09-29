@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+button{
+  border: 0;
+  outline: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background: url("../images/pattern.png") repeat-x top -100px left;
+}
+.header{
+  text-align: center;
+  .logo{
+    width: 192px;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .logo_image{
+    background: url("../images/logo.png");
+    width: 192px;
+    height: 151px;
+    display: inline-block;
+  }
+  .logo_text__big{
+    font-family: @font;
+    font-size: 16px;
+    color: @green;
+    text-transform: uppercase;
+    padding: 10px 0 0 0;
+  }
+  .logo_text__min{
+    font-family: @font;
+    color: @text;
+    font-size: 10px;
+  }
+  .timer_one{
+    margin-top: 10px;
+    div{
+      padding: 0 10px;
+      display: inline-block;
+      width: 60px;
+      text-transform: uppercase;
+      p:first-child{
+        color: @light-green;
+        font-size: 24px;
+        font-family: @font-bold;
+      }
+      p:last-child{
+        color: #c8c8c8;
+        font-family: @font1;
+        font-size: 9px;
+      }
+    }
+    div:nth-child(2){
+      border-left: 1px solid #c8c8c8;
+      border-right: 1px solid #c8c8c8;
+    }
+  }
+  .timer_two{
+    margin-top: 20px;
+    div{
+      display: inline-block;
+      position: relative;
+      vertical-align: bottom;
+    }
+    .mixin_tree(@url,@width,@height){
+      background: url(@url);
+      width: @width;
+      height: @height;
+      color: @text;
+      font-size: 10px;
+      font-family: @font-light;
+      line-height: 0.9;
+      box-sizing: border-box;
+      padding-top: 25px;
+      margin: 0 5px;
+      span{
+        display: block;
+        font-family: @font1;
+        font-size: 38px;
+      }
+    }
+
+    .tree_1{
+      .mixin_tree("../images/tree.png", 111px, 132px);
+      margin: 0;
+      span{
+        color: @light-green;
+      }
+    }
+    .tree_2{
+      .mixin_tree("../images/tree-2.png", 110px, 131px);
+      span{
+        color: @red;
+      }
+    }
+    .tree_3{
+      .mixin_tree("../images/tree-3.png", 98px, 127px);
+      padding-top: 22px;
+      span{
+        color: @green;
+      }
+    }
+    .tree_4{
+      .mixin_tree("../images/tree_4.png", 93px, 131px);
+      span{
+        color: @yellow;
+      }
+    }
+  }
+  .social{
+    button{
+      cursor: pointer;
+      margin: 30px 0 10px 0;
+      background: white;
+      font-size: 18px;
+      font-family: @font-light;
+      color:@red;
+      border-top:1px solid @red;
+      padding: 10px 30px;
+      text-transform: uppercase;
+    }
+    button:hover{
+      border-top:1px solid @green;
+      color: @text;
+    }
+    .social_buttons{
+      div{
+        width: 26px;
+        height: 26px;
+        margin-right: 1px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .fb{
+        background: url("../images/fb.png");
+      }
+      .fb:hover{
+        background: url("../images/fb-h.png");
+      }
+      .vk{
+        background: url("../images/vk.png");
+      }
+      .vk:hover{
+        background: url("../images/vk-h.png");
+      }
+      .insta{
+        background: url("../images/insta.png");
+      }
+      .insta:hover{
+        background: url("../images/insta-h.png");
+      }
+      .google{
+        background: url("../images/google.png");
+      }
+      .google:hover{
+        background: url("../images/google-h.png");
+      }
+      .tw{
+        background: url("../images/tw.png");
+      }
+      .tw:hover{
+        background: url("../images/tw-h.png");
+      }
+    }
+  }
+}
+
+@font : 'Gabriela Regular', 'Helvetica', sans-serif;
+@font-light : 'Calibri Light', 'Helvetica', sans-serif;
+@font1 : 'Calibri', 'Helvetica', sans-serif;
+@font-bold : 'Calibri Bold', 'Helvetica', sans-serif;
+
+@green: #99cc99;
+@light-green: #a6d8be;
+@red: #f9927f;
+@yellow: #e5cf65;
+@text: #595959;
+
+@import "large";
+@import "middle";
+@import "small";
