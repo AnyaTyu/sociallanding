@@ -8,6 +8,130 @@
   }
 
   .hidden-xs {
+    display: none !important;
+  }
+  .header .timer_two .tree_1,
+  .header .timer_two .tree_2,
+  .header .timer_two .tree_3,
+  .header .timer_two .tree_4{
+    background: none;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .header .timer_two {
+    margin-top: -10px;
+  }
+  .preview{
+    padding-bottom: 50px;
+  }
+  .preview > div{
+    width: 100% !important;
+    padding: 0 !important;
+    border-bottom: 0;
+  }
+  .preview > div .preview_wrapper {
+    padding: 30px 8% 15px 8% !important;
+    text-align: center;
+  }
+  .preview > div .preview_wrapper::after{
+    left: 49%;
+  }
+  .preview > div:nth-child(4) .preview_wrapper::after,
+  .preview > div:nth-child(5) .preview_wrapper::after,
+  .preview > div:nth-child(6) .preview_wrapper::after{
+    top: auto;
+    bottom: -5px;
+  }
+  .preview {
+    > div:nth-child(1) {
+      .preview_wrapper {
+        border-left: 0;
+        border-bottom: 1px solid @yellow;
+      }
+    }
+    > div:nth-child(2) {
+      .preview_wrapper {
+        border-left: 0;
+        border-bottom: 1px solid @red;
+      }
+    }
+    > div:nth-child(3) {
+      .preview_wrapper {
+        border-left: 0;
+        border-bottom: 1px solid @light-green;
+      }
+    }
+    > div:nth-child(4) {
+      .preview_wrapper {
+        border-left: 0;
+        border-bottom: 1px solid @light-green;
+      }
+    }
+    > div:nth-child(5) {
+      .preview_wrapper {
+        border-left: 0;
+        border-bottom: 1px solid @green;
+      }
+    }
+    > div:nth-child(6) {
+      .preview_wrapper {
+        border-left: 0;
+        border-bottom: 1px solid @yellow;
+      }
+    }
+  }
+  .our-tree .wrapper-gallery #slideshow-inner .slide .slide_item{
+    width: 100%;
+  }
+  .our-tree .wrapper-gallery #slideshow-inner .slide .slide_item .photo{
+    width: 100%;
+  }
+  .our-tree .wrapper-gallery #slideshow-inner .slide .slide_item.photo:first-child{
     display: none;
+  }
+  .info-block .left, .info-block .right{
+    width: 95%;
+    margin: 0;
+    margin-right: 5%;
+    padding-bottom: 35px;
+  }
+  .info-block .right .otziv .photo{
+    width: 64px;height: 64px;
+  }
+  .info-block .right .otziv .text-block {
+    margin-left: 80px;
+  }
+  .social button {
+    padding: 10px 20px;
+  }
+  .social .social_buttons div {
+    margin-right: 12px;
+  }
+  .social_buttons{
+    margin: 25px 0 0;
+  }
+  .footer .social {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .footer .contacts {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .social-button-block h2{
+    font-family: 'Calibri Light', 'Helvetica', sans-serif;
+    color: #595959;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px auto 0;
+  }
+  .info-block .sponsor .sponsor_item{
+    margin: 2%;
+  }
+  .social-button-block button{
+    margin: 20px auto;
   }
 }

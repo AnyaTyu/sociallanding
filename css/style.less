@@ -73,6 +73,13 @@ body{
       border-right: 1px solid #c8c8c8;
     }
   }
+  .timer_two__title{
+    font-family: @font-light;
+    color: #595959;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px auto 0;
+  }
   .timer_two{
     margin-top: 20px;
     div{
@@ -479,35 +486,6 @@ body{
     margin: 0 2%;
     border-top: 2px solid #96b47e;
     vertical-align: top;
-    .sponsor_wrapper{
-      padding-left: 10px;
-      text-align: justify;
-    }
-    .sponsor_wrapper::after{
-      content: '';
-      display: inline-block;
-      width: 100%;
-    }
-    .sponsor{
-      margin-top: 40px;
-      display: inline-block;
-      width: 100%;
-      border-top: 2px solid #96b47e;
-      vertical-align: top;
-      text-align: left;
-      .sponsor_item{
-        >div{
-          display: table-cell;
-          vertical-align: middle;
-          width: 40px;
-          height: 40px;
-        }
-        display: inline-block;
-        border: 1px solid #d7d7d7;
-        padding: 10px;
-        border-radius: 18px 0 18px 0;
-      }
-    }
     .sponsor h2,
     h2{
       position: relative;
@@ -519,6 +497,36 @@ body{
       background: #fff;
       padding: 10px 20px;
       text-transform: uppercase;
+    }
+  }
+
+  .sponsor_wrapper{
+    padding-left: 10px;
+    text-align: justify;
+  }
+  .sponsor_wrapper::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+  .sponsor{
+    margin-top: 40px;
+    display: inline-block;
+    width: 100%;
+    border-top: 2px solid #96b47e;
+    vertical-align: top;
+    text-align: left;
+    .sponsor_item{
+      >div{
+        display: table-cell;
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+      }
+      display: inline-block;
+      border: 1px solid #d7d7d7;
+      padding: 10px;
+      border-radius: 18px 0 18px 0;
     }
   }
   .left{
