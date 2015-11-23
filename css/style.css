@@ -12,6 +12,22 @@ a {
 body {
   background: url("../images/pattern.png") repeat-x top -100px left;
 }
+@font-face {
+  font-family: Gabriela Regular;
+  src: url(../fonts/Gabriela-Regular.ttf);
+}
+@font-face {
+  font-family: Calibri Light;
+  src: url(../fonts/8277.ttf);
+}
+@font-face {
+  font-family: Calibri;
+  src: url(../fonts/calibri.ttf);
+}
+@font-face {
+  font-family: Calibri Bold;
+  src: url(../fonts/Calibri_Bold.ttf);
+}
 .header {
   text-align: center;
 }
